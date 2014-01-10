@@ -35,10 +35,8 @@
 		<version.junit>4.10</version.junit>
 		<version.org.apache.maven.plugins.maven-failsafe-plugin>2.15</version.org.apache.maven.plugins.maven-failsafe-plugin>
 		<version.org.jboss.arquillian.arquillian-bom>1.1.1.Final</version.org.jboss.arquillian.arquillian-bom>
-		<version.org.jboss.as.jboss-as-arquillian-container-managed>7.2.0.Final</version.org.jboss.as.jboss-as-arquillian-container-managed>
-		<!-- version.org.apache.cxf>2.2.12-patch-08</version.org.apache.cxf -->
-		<!-- version.org.jboss.ws>3.1.2.SP13</version.org.jboss.ws-->
-		<version.org.jboss.ws>4.2.3.Final-redhat-1</version.org.jboss.ws>
+		<version.org.jboss.jbossas.jboss-server-manager>1.0.4.Final</version.org.jboss.jbossas.jboss-server-manager>
+		<!--version.org.jboss.jbossas.jboss-server-manager>1.0.5-SNAPSHOT</version.org.jboss.jbossas.jboss-server-manager-->		
 		<version.org.slf4j>1.7.2</version.org.slf4j>
 		<version.javax.xml.ws.jaxws-api>2.1</version.javax.xml.ws.jaxws-api>
 		<version.org.jboss.arquillian.container.arquillian-jbossas-managed-5.1>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-jbossas-managed-5.1>
@@ -147,8 +145,7 @@
 				<dependency>
 					<groupId>org.jboss.jbossas</groupId>
 					<artifactId>jboss-server-manager</artifactId>
-					<version>1.0.4.Final</version>
-					<!--version>1.0.5-SNAPSHOT</version-->
+					<version>${version.org.jboss.jbossas.jboss-server-manager}</version>
 				</dependency>
 				<dependency>
 					<groupId>org.jboss.jbossas</groupId>
