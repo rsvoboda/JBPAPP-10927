@@ -32,16 +32,18 @@
 
 		<downloadSources>true</downloadSources>
 
+		<version.commons-io>2.4</version.commons-io>
+		<version.javax.xml.ws.jaxws-api>2.1</version.javax.xml.ws.jaxws-api>
 		<version.junit>4.10</version.junit>
+		<version.org.apache.httpcomponents.httpclient>4.2.5</version.org.apache.httpcomponents.httpclient>
 		<version.org.apache.maven.plugins.maven-failsafe-plugin>2.15</version.org.apache.maven.plugins.maven-failsafe-plugin>
 		<version.org.jboss.arquillian.arquillian-bom>1.1.1.Final</version.org.jboss.arquillian.arquillian-bom>
+		<version.org.jboss.arquillian.container.arquillian-jbossas-managed-5.1>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-jbossas-managed-5.1>
+		<version.org.jboss.jbossas.jboss-as-client.pom>5.1.0.GA</version.org.jboss.jbossas.jboss-as-client.pom>
+		<version.org.jboss.jbossas.jboss-as-profileservice-client.pom>6.0.0.Final</version.org.jboss.jbossas.jboss-as-profileservice-client.pom>
 		<version.org.jboss.jbossas.jboss-server-manager>1.0.4.Final</version.org.jboss.jbossas.jboss-server-manager>
 		<!--version.org.jboss.jbossas.jboss-server-manager>1.0.5-SNAPSHOT</version.org.jboss.jbossas.jboss-server-manager-->
 		<version.org.slf4j>1.7.2</version.org.slf4j>
-		<version.javax.xml.ws.jaxws-api>2.1</version.javax.xml.ws.jaxws-api>
-		<version.org.jboss.arquillian.container.arquillian-jbossas-managed-5.1>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-jbossas-managed-5.1>
-		<version.commons-io>2.4</version.commons-io>
-		<version.org.apache.httpcomponents.httpclient>4.2.5</version.org.apache.httpcomponents.httpclient>
 
 		<!--
 		<jboss.home>${project.basedir}/target/jboss-eap-6.2</jboss.home>
@@ -139,7 +141,7 @@
 				<dependency>
 					<groupId>org.jboss.jbossas</groupId>
 					<artifactId>jboss-as-client</artifactId>
-					<version>5.1.0.GA</version>
+					<version>${version.org.jboss.jbossas.jboss-as-client.pom}</version>
 					<type>pom</type>
 					<exclusions>
 						<exclusion>
@@ -151,7 +153,7 @@
 				<dependency>
 					<groupId>org.jboss.jbossas</groupId>
 					<artifactId>jboss-as-profileservice-client</artifactId>
-					<version>6.0.0.Final</version>
+					<version>${version.org.jboss.jbossas.jboss-as-profileservice-client.pom}</version>
 					<type>pom</type>
 				</dependency>
 			</dependencies>
